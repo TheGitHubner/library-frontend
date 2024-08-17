@@ -1,0 +1,34 @@
+<mat-sidenav-container class="container">
+  <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap="64">
+    <mat-nav-list class="nav-list">
+      <mat-list-item routerLink="/">
+        <a>
+          <i class="material-icons vertical-middle">home</i>
+          Início
+        </a>
+      </mat-list-item>
+      <mat-list-item routerLink="/usuarios">
+        <a>
+          <i class="material-icons vertical-middle">group</i>
+          Usuários
+        </a>
+      </mat-list-item>
+      <mat-list-item routerLink="/livros">
+        <a>
+          <i class="material-icons vertical-middle">menu_book</i>
+          Livros
+        </a>
+      </mat-list-item>
+      <mat-list-item routerLink="/emprestimos">
+        <a>
+          <i class="material-icons vertical-middle">manage_accounts</i>
+          Empréstimos
+        </a>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="content">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,15 @@
+.card-criar-usuario {
+  padding: 10px;
+  background-color: #e0e0e0;
+}
+
+.card-criar-usuario .card-title{
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}

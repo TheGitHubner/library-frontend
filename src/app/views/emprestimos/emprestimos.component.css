@@ -1,0 +1,19 @@
+.card-emprestimo {
+  padding: 10px;
+  background-color: #e0e0e0;
+}
+
+.card-emprestimo .card-title{
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+
+.card-emprestimo .card-subtitle{
+  font-size: 0.8rem;
+}
+
+.btn-add-emprestimo {
+  display: flex;
+  justify-content: flex-end;
+}

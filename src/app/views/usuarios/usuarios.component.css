@@ -1,0 +1,19 @@
+.card-usuario {
+  padding: 10px;
+  background-color: #e0e0e0;
+}
+
+.card-usuario .card-title{
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+
+.card-usuario .card-subtitle{
+  font-size: 0.8rem;
+}
+
+.btn-add-usuario {
+  display: flex;
+  justify-content: flex-end;
+}

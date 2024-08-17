@@ -1,0 +1,19 @@
+.card-livro {
+  padding: 10px;
+  background-color: #e0e0e0;
+}
+
+.card-livro .card-title{
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+
+.card-livro .card-subtitle{
+  font-size: 0.8rem;
+}
+
+.btn-add-livro {
+  display: flex;
+  justify-content: flex-end;
+}
