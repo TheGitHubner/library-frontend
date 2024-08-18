@@ -17,3 +17,20 @@
   margin-top: 30px;
   width: 100%;
 }
+
+.titulo-usuario {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-container {
+  height: 60vh;
+  overflow-y: auto;
+}
+
+.mat-header-row {
+  position: sticky;
+  top: 0;
+  z-index: 99999 !important;
+  background-color: rgb(236, 236, 236);
+}

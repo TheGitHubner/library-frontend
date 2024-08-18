@@ -34,11 +34,22 @@
 }
 
 .table-container {
-  max-height: 340px;
+  height: 53vh;
   overflow-y: auto;
 }
 
 .mat-table {
   width: 100%;
+}
+
+.card-subtitle {
+  color: red;
+}
+
+.mat-header-row {
+  position: sticky;
+  top: 0;
+  z-index: 99999 !important;
+  background-color: rgb(236, 236, 236);
 }
 

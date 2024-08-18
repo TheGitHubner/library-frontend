@@ -52,12 +52,12 @@
       </td>
     </ng-container>
 
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-header-row class="mat-header-row" *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 
   </table>
 </div>
-<mat-card-subtitle>
+<mat-card-subtitle class="card-subtitle">
   * Serão exibidos apenas os primeiros 10 livros encontrados
 </mat-card-subtitle>
 
