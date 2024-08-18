@@ -9,6 +9,7 @@ import { CriacaoEmprestimoComponent } from './components/emprestimo/criacao-empr
 import { CriacaoLivroComponent } from './components/livro/criacao-livro/criacao-livro.component';
 import { EditarUsuarioComponent } from './components/usuario/editar-usuario/editar-usuario.component';
 import { EditarLivroComponent } from './components/livro/editar-livro/editar-livro.component';
+import { ListagemLivrosRecomendadosComponent } from './components/livro/listagem-livros-recomendados/listagem-livros-recomendados.component';
 
 const routes: Routes = [
   {
@@ -34,6 +35,10 @@ const routes: Routes = [
   {
     path: "livros/editar/:id",
     component: EditarLivroComponent
+  },
+  {
+    path: "livros/recomendacoes/:id/:nome",
+    component: ListagemLivrosRecomendadosComponent
   },
   {
     path: "usuarios",

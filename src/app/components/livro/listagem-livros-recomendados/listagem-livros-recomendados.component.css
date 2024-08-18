@@ -10,10 +10,10 @@
 }
 
 .card-livro .card-subtitle{
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
-.btn-add-livro {
-  display: flex;
-  justify-content: space-between;
+.table {
+  margin-top: 30px;
+  width: 100%;
 }

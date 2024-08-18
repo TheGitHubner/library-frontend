@@ -42,5 +42,4 @@ export class CriacaoLivroComponent implements OnInit {
   public cancelar(): void {
     this.router.navigate(['/livros'])
   }
-
 }

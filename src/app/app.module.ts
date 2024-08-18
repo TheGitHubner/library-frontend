@@ -36,6 +36,7 @@ import { ListagemUsuarioComponent } from './components/usuario/listagem-usuario/
 import { EditarUsuarioComponent } from './components/usuario/editar-usuario/editar-usuario.component';
 import { ListagemLivroComponent } from './components/livro/listagem-livro/listagem-livro.component';
 import { EditarLivroComponent } from './components/livro/editar-livro/editar-livro.component';
+import { ListagemLivrosRecomendadosComponent } from './components/livro/listagem-livros-recomendados/listagem-livros-recomendados.component';
 
 
 @NgModule({
@@ -54,7 +55,8 @@ import { EditarLivroComponent } from './components/livro/editar-livro/editar-liv
     ListagemUsuarioComponent,
     EditarUsuarioComponent,
     ListagemLivroComponent,
-    EditarLivroComponent
+    EditarLivroComponent,
+    ListagemLivrosRecomendadosComponent
 
   ],
   imports: [

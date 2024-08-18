@@ -32,4 +32,8 @@ export class LivroService {
   public excluirLivro(livroId: string): Observable<Livro> {
     return this.http.delete<Livro>(`${API}/livros/${livroId}`)
   }
+
+  public buscarLivrosRecomendados(usuarioId: string): Observable<Livro[]> {
+    return this.http.get<Livro[]>(`${API}/livros/recomendacoes/${usuarioId}`)
+  }
 }

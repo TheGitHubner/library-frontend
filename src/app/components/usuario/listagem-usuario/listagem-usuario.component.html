@@ -35,6 +35,10 @@
       <button (click)="excluirUsuario(usuario.id)" mat-flat-button color="warn" matTooltip="Excluir">
         <i class="material-icons">delete</i>
       </button>
+
+      <button routerLink="/livros/recomendacoes/{{usuario.id}}/{{usuario.nome}}" mat-flat-button color="accent" matTooltip="Mostrar Recomendações">
+        <i class="material-icons">recommend</i>
+      </button>
     </td>
   </ng-container>
 

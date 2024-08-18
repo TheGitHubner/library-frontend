@@ -1,8 +1,8 @@
 <mat-card class="card-emprestimo mat-elevation-z3">
   <mat-card-title class="card-title">
-    Empréstimos
+    <div class="btn-add-emprestimo">
+      Empréstimos
+      <button mat-flat-button color="primary" (click)="navigateToCriacaoEmprestimo()">Adicionar Empréstimo</button>
+    </div>
   </mat-card-title>
-  <div class="btn-add-emprestimo">
-    <button mat-flat-button color="primary" (click)="navigateToCriacaoEmprestimo()">Adicionar Empréstimo</button>
-  </div>
 </mat-card>
