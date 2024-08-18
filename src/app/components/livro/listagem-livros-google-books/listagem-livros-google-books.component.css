@@ -1,0 +1,44 @@
+.card-livro {
+  padding: 10px;
+  background-color: #e0e0e0;
+}
+
+.card-livro .card-title{
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+.card-livro .titulo-livro{
+  width: 80%;
+}
+
+.card-livro .busca-livro{
+  display: flex;
+}
+
+.card-livro .busca-livro button{
+  width: 100px;
+  margin-left: 10px;
+  min-height: 56px;
+}
+
+.table {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.table-container button {
+  height: 30px !important;
+  min-width: 30px !important;
+  width: 30px;
+}
+
+.table-container {
+  max-height: 340px;
+  overflow-y: auto;
+}
+
+.mat-table {
+  width: 100%;
+}
+

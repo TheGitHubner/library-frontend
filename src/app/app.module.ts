@@ -37,6 +37,7 @@ import { EditarUsuarioComponent } from './components/usuario/editar-usuario/edit
 import { ListagemLivroComponent } from './components/livro/listagem-livro/listagem-livro.component';
 import { EditarLivroComponent } from './components/livro/editar-livro/editar-livro.component';
 import { ListagemLivrosRecomendadosComponent } from './components/livro/listagem-livros-recomendados/listagem-livros-recomendados.component';
+import { ListagemLivrosGoogleBooksComponent } from './components/livro/listagem-livros-google-books/listagem-livros-google-books.component';
 
 
 @NgModule({
@@ -56,7 +57,8 @@ import { ListagemLivrosRecomendadosComponent } from './components/livro/listagem
     EditarUsuarioComponent,
     ListagemLivroComponent,
     EditarLivroComponent,
-    ListagemLivrosRecomendadosComponent
+    ListagemLivrosRecomendadosComponent,
+    ListagemLivrosGoogleBooksComponent
 
   ],
   imports: [

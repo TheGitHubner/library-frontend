@@ -1,5 +1,4 @@
 <mat-card class="card-livro mat-elevation-z3">
-
   <mat-card-subtitle class="card-subtitle">
     Livros recomendados para:
   </mat-card-subtitle>
@@ -7,6 +6,7 @@
     <strong> {{usuarioId}} - {{usuarioNome}} </strong>
   </mat-card-title>
 </mat-card>
+
 <table mat-table [dataSource]="livros" class="mat-elevation-z4">
 
   <ng-container matColumnDef="id">

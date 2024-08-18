@@ -1,8 +1,11 @@
 <mat-card class="card-livro mat-elevation-z3">
   <mat-card-title class="card-title">
-    <div class="btn-add-livro">
+    <div class="add-livro">
       Livros
-        <button mat-flat-button color="primary" (click)="navigateToCriacaoLivro()">Adicionar Livro</button>
+        <div class="btn-add-livro">
+          <button mat-flat-button color="primary" (click)="navigateToCriacaoLivro()">Adicionar Livro</button>
+          <button mat-flat-button color="primary" (click)="navigateToListagemLivrosGoogleBooks()">Buscar no Google Books</button>
+        </div>
     </div>
   </mat-card-title>
 </mat-card>

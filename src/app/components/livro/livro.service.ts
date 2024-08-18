@@ -8,7 +8,6 @@ import { API } from 'src/app/app.api';
   providedIn: 'root'
 })
 export class LivroService {
-
   constructor(
     private http: HttpClient
   ) { }
@@ -35,5 +34,13 @@ export class LivroService {
 
   public buscarLivrosRecomendados(usuarioId: string): Observable<Livro[]> {
     return this.http.get<Livro[]>(`${API}/livros/recomendacoes/${usuarioId}`)
+  }
+
+  public buscarLivrosGoogleBooks(nomeLivroQuery: string) {
+    return this.http.get<Livro[]>(`${API}/livros/buscar-livros-google-books`, {
+      params: {
+        nomeLivro: nomeLivroQuery
+      }}
+    )
   }
 }

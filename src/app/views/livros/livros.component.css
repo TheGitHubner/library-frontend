@@ -13,7 +13,13 @@
   font-size: 0.8rem;
 }
 
+.add-livro {
+  display: flex;
+  justify-content: space-between;
+}
+
 .btn-add-livro {
   display: flex;
   justify-content: space-between;
+  width: 375px;
 }

@@ -10,6 +10,7 @@ import { CriacaoLivroComponent } from './components/livro/criacao-livro/criacao-
 import { EditarUsuarioComponent } from './components/usuario/editar-usuario/editar-usuario.component';
 import { EditarLivroComponent } from './components/livro/editar-livro/editar-livro.component';
 import { ListagemLivrosRecomendadosComponent } from './components/livro/listagem-livros-recomendados/listagem-livros-recomendados.component';
+import { ListagemLivrosGoogleBooksComponent } from './components/livro/listagem-livros-google-books/listagem-livros-google-books.component';
 
 const routes: Routes = [
   {
@@ -39,6 +40,10 @@ const routes: Routes = [
   {
     path: "livros/recomendacoes/:id/:nome",
     component: ListagemLivrosRecomendadosComponent
+  },
+  {
+    path: "livros/google-books",
+    component: ListagemLivrosGoogleBooksComponent
   },
   {
     path: "usuarios",

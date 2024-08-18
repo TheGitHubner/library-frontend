@@ -12,10 +12,13 @@ export class LivrosComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-
   }
 
-  navigateToCriacaoLivro(){
+  public navigateToCriacaoLivro(): void {
     this.router.navigate(['livros/criar'])
+  }
+
+  public navigateToListagemLivrosGoogleBooks(): void{
+    this.router.navigate(['livros/google-books'])
   }
 }
