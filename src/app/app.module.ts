@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 /* Material UI */
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -16,6 +17,10 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatTableModule } from '@angular/material/table';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatTooltipModule } from '@angular/material/tooltip';
+
 
 import { HeaderComponent } from './components/template/header/header.component';
 import { NavigationComponent } from './components/template/navigation/navigation.component';
@@ -27,6 +32,11 @@ import { UsuariosComponent } from './views/usuarios/usuarios.component';
 import { CriacaoUsuarioComponent } from './components/usuario/criacao-usuario/criacao-usuario.component';
 import { CriacaoLivroComponent } from './components/livro/criacao-livro/criacao-livro.component';
 import { CriacaoEmprestimoComponent } from './components/emprestimo/criacao-emprestimo/criacao-emprestimo.component';
+import { ListagemUsuarioComponent } from './components/usuario/listagem-usuario/listagem-usuario.component';
+import { EditarUsuarioComponent } from './components/usuario/editar-usuario/editar-usuario.component';
+import { ListagemLivroComponent } from './components/livro/listagem-livro/listagem-livro.component';
+import { EditarLivroComponent } from './components/livro/editar-livro/editar-livro.component';
+
 
 @NgModule({
   declarations: [
@@ -40,7 +50,12 @@ import { CriacaoEmprestimoComponent } from './components/emprestimo/criacao-empr
     UsuariosComponent,
     CriacaoUsuarioComponent,
     CriacaoLivroComponent,
-    CriacaoEmprestimoComponent
+    CriacaoEmprestimoComponent,
+    ListagemUsuarioComponent,
+    EditarUsuarioComponent,
+    ListagemLivroComponent,
+    EditarLivroComponent
+
   ],
   imports: [
     BrowserModule,
@@ -56,7 +71,11 @@ import { CriacaoEmprestimoComponent } from './components/emprestimo/criacao-empr
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatSnackBarModule,
+    MatTableModule,
+    MatDialogModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
