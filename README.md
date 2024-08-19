@@ -2,7 +2,7 @@
 
 ## Requisitos
 * Node 19 ou mais recente
-* Para funcionamento das requisições, é necessário subir o projeto do repositório `git@github.com:TheGitHubner/library-management.git` (Ver README desse projeto para saber como executá-lo)
+* Para funcionamento das requisições, é necessário subir o projeto do repositório `https://github.com/TheGitHubner/library-management.git` (Ver README desse projeto para saber como executá-lo)
 ## Passo-a-passo para execução
 * Clonar o repositório:
   * `https://github.com/TheGitHubner/library-management.git`
