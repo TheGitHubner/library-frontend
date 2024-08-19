@@ -1,1 +1,34 @@
-<p>criacao-emprestimo works!</p>
+<mat-card class="card-criar-emprestimo mat-elevation-z3">
+  <mat-card-title class="card-title">
+    Adicionar Empréstimo
+  </mat-card-title>
+
+  <form>
+    <mat-form-field appearance="fill">
+      <mat-label>ID do usuário</mat-label>
+      <input matInput name="usuarioId" placeholder="Informe o ID do usuário" required [(ngModel)]="emprestimo.usuarioId">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>ID do livro</mat-label>
+      <input matInput name="livroId" placeholder="Informe o ID do livro" required [(ngModel)]="emprestimo.livroId">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Data do empréstimo</mat-label>
+      <input matInput placeholder="DD/MM/AAAA" name="dataEmprestimo" required [(ngModel)]="emprestimo.dataEmprestimo">
+      <mat-icon matSuffix>calendar_month</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Data da devolução</mat-label>
+      <input matInput placeholder="DD/MM/AAAA" name="dataDevolucao" required [(ngModel)]="emprestimo.dataDevolucao">
+      <mat-icon matSuffix>calendar_month</mat-icon>
+    </mat-form-field>
+  </form>
+
+  <div>
+    <button mat-flat-button color="primary" (click)="criarEmprestimo()">Salvar</button>
+    <button mat-flat-button color="warn" (click)="cancelar()">Cancelar</button>
+  </div>
+</mat-card>

@@ -3,6 +3,7 @@ import { ActivatedRoute, Route, Router } from '@angular/router';
 import { UsuarioService } from '../usuario.service';
 import { SharedService } from '../../shared/shared.service';
 import { Usuario } from '../usuarios.model';
+import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-editar-usuario',
@@ -33,14 +34,28 @@ export class EditarUsuarioComponent implements OnInit {
   }
 
   public editarUsuario(): void {
+    if(this.__formularioInvalido())
+      return
+
     this.usuarioService.editarUsuario(this.usuario).subscribe(() => {
       this.sharedService.showMessage('Usuário atualizado com sucesso!')
       this.router.navigate(['/usuarios'])
     },
-    (error) => {
+    (error: HttpErrorResponse) => {
       console.error("Erro ao atualizar usuário: ", error);
-      this.sharedService.showMessage('Erro ao atualizar usuário, revise os dados e tente novamente.')
+      this.sharedService.showMessage('Erro ao atualizar usuário: ' + error.error.message)
     })
+  }
+
+  private __formularioInvalido(): boolean {
+    if (!this.usuario.nome || this.usuario.nome.trim() == '' ||
+        !this.usuario.email || this.usuario.email.trim() == '' ||
+        !this.usuario.dataCadastro || this.usuario.dataCadastro.trim() == '' ||
+        !this.usuario.telefone || this.usuario.telefone.trim() == '') {
+      this.sharedService.showMessage('Todos os campos são obrigatórios.')
+      return true
+    }
+    return false
   }
 
   public cancelar(): void {

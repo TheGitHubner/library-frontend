@@ -1,0 +1,42 @@
+<mat-card class="card-editar-emprestimo mat-elevation-z3">
+  <mat-card-title class="card-title">
+    Atualizar Empréstimo
+  </mat-card-title>
+
+  <form>
+    <mat-form-field appearance="fill">
+      <mat-label>Usuário</mat-label>
+      <input matInput name="usuario" required [(ngModel)]="emprestimo.usuario.nome" disabled>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Livro</mat-label>
+      <input matInput name="livro" required [(ngModel)]="emprestimo.livro.titulo" disabled=>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Data do empréstimo</mat-label>
+      <input matInput placeholder="DD/MM/AAAA" name="dataEmprestimo" required [(ngModel)]="emprestimo.dataEmprestimo" disabled>
+      <mat-icon matSuffix>calendar_month</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Data da devolução</mat-label>
+      <input matInput placeholder="DD/MM/AAAA" name="dataDevolucao" required [(ngModel)]="emprestimo.dataDevolucao">
+      <mat-icon matSuffix>calendar_month</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Situação</mat-label>
+      <select matNativeControl required [(ngModel)]="situacaoSelecionada" [ngModelOptions]="{standalone: true}" required>
+        <option value="ABERTO">Aberto</option>
+        <option value="FINALIZADO">Finalizado</option>
+      </select>
+    </mat-form-field>
+  </form>
+
+  <div>
+    <button mat-flat-button color="primary" (click)="editarEmprestimo()">Salvar</button>
+    <button mat-flat-button color="warn" (click)="cancelar()">Cancelar</button>
+  </div>
+</mat-card>

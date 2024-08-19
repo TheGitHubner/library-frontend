@@ -38,6 +38,8 @@ import { ListagemLivroComponent } from './components/livro/listagem-livro/listag
 import { EditarLivroComponent } from './components/livro/editar-livro/editar-livro.component';
 import { ListagemLivrosRecomendadosComponent } from './components/livro/listagem-livros-recomendados/listagem-livros-recomendados.component';
 import { ListagemLivrosGoogleBooksComponent } from './components/livro/listagem-livros-google-books/listagem-livros-google-books.component';
+import { ListagemEmprestimoComponent } from './components/emprestimo/listagem-emprestimo/listagem-emprestimo.component';
+import { EditarEmprestimoComponent } from './components/emprestimo/editar-emprestimo/editar-emprestimo.component';
 
 
 @NgModule({
@@ -58,7 +60,9 @@ import { ListagemLivrosGoogleBooksComponent } from './components/livro/listagem-
     ListagemLivroComponent,
     EditarLivroComponent,
     ListagemLivrosRecomendadosComponent,
-    ListagemLivrosGoogleBooksComponent
+    ListagemLivrosGoogleBooksComponent,
+    ListagemEmprestimoComponent,
+    EditarEmprestimoComponent
 
   ],
   imports: [

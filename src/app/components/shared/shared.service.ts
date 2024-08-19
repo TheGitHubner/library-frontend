@@ -12,7 +12,7 @@ export class SharedService {
 
   public showMessage(msg: string): void {
     this.snackBar.open(msg, 'X', {
-      duration: 3000,
+      duration: 5000,
       horizontalPosition: "center",
       verticalPosition: "bottom"
     })
